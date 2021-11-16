@@ -1,2 +1,2 @@
 # forum
-link fo project:
+link for project:

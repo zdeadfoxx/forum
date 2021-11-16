@@ -80,6 +80,7 @@ a {
 
 body {
     background-color: #000;
+    color: #fff;
 }
 
 /*header*/
@@ -124,6 +125,7 @@ body {
 }
 
 .burrger__menu {
+    cursor: pointer;
     display: none;
 }
 
@@ -144,53 +146,153 @@ body {
     /*   background-size: cover;*/
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
+
+}
+
+.main__row {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.main__row {
+.info {}
 
+.about__game {
+    margin-top: 500px;
+}
 
-    /*footer*/
-    footer {
-        background-color: red;
-        padding: 20px;
+.info__title {
+    margin-top: 7.5em;
+    margin-bottom: 1em;
+}
+
+.info__text {
+    line-height: 1.5;
+    font-size: 40px;
+
+}
+
+.about__game {
+    margin-bottom: 2em;
+
+}
+
+.parents__card {
+    display: grid;
+    grid-template-columns: minmax(auto, auto);
+
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.game__title {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.list__info {
+    text-align: left;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.about__game {
+    text-align: center;
+    margin-bottom: 20em;
+}
+
+.parents {
+    margin-bottom: 13em;
+}
+
+.parents__title {
+    text-align: center;
+    margin-bottom: 1em;
+
+}
+
+.parents__text {
+    line-height: 1.5;
+    font-size: 40px;
+}
+
+.info__text:after {
+    background: url('/img//ico/Polygon\ 3.svg') 0 0 no-repeat;
+    content: '';
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 200%;
+    left: 515px;
+    cursor: pointer;
+}
+
+.polygon img {}
+
+/*footer*/
+footer {
+    background-color: red;
+    padding: 20px;
+}
+
+/**/
+/* breake point for addaption*/
+@media (max-width:1400px) {
+    .container {
+        margin: 0 10px;
+
     }
 
-    /**/
-    /* breake point for addaption*/
-    @media (max-width:1400px) {
-        .container {
-            margin: 0 10px;
+    .main__row {
 
-        }
+        margin-top: 100px;
+    }
 
-        .burrger__menu {
-            display: block;
-        }
 
-        .menu__list {
-            display: none;
-        }
+
+    .about__game {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: 750px;
 
     }
 
-    @media (max-width:767px) {
-        .container {
-            max-width: 750px;
-
-        }
-
-
+    .burrger__menu {
+        display: block;
     }
 
-    @media (max-width:479px) {
-        .container {
-            max-width: none;
-            margin: 0 auto;
-        }
-
-
+    .menu__list {
+        display: none;
     }
+
+    .main__row {
+
+        margin-top: 0;
+    }
+
+
+
+    .about__game {
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width:479px) {
+    .container {
+        max-width: none;
+        margin: 0 auto;
+    }
+
+
+}
